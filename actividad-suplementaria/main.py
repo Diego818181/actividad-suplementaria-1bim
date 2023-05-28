@@ -2,6 +2,9 @@ def proceso_bancario(banco, accion, cantidad):
     if accion == "depositar":
         banco.depositar(cantidad)
         print(f"Se depositaron {cantidad} en {banco.nombre}")
+    elif accion == "retirar":
+        banco.retirar(cantidad)
+        print(f"Se retiraron {cantidad} de {banco.nombre}")
     
 
 
