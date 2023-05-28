@@ -5,7 +5,9 @@ def proceso_bancario(banco, accion, cantidad):
     elif accion == "retirar":
         banco.retirar(cantidad)
         print(f"Se retiraron {cantidad} de {banco.nombre}")
-    
+    elif accion == "consultar":
+        saldo = banco.consultar_saldo()
+        print(f"El saldo de {banco.nombre} es {saldo}")
 
 
 # Crear objetos de la clase Banco
