@@ -13,7 +13,10 @@ def proceso_bancario(banco, accion, cantidad):
 # Crear objetos de la clase Banco
 banco1 = Banco("Banco A", 1000)
 banco2 = Banco("Banco B", 500)
+banco3 = Banco("Banco C", 700)
+
 
 # Realizar procesos bancarios en paralelo
 proceso1 = proceso_bancario(banco1, "depositar", 200)
 proceso2 = proceso_bancario(banco2, "retirar", 300)
+proceso3 = proceso_bancario(banco3, "depositar", 500)
